@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERENO STUDIO — Drop 01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <header class="announcement-bar">
+        DROP 01: QUARTER-ZIP FLEECE — PRE-ORDERS OPEN UNTIL SUNDAY MIDNIGHT
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">T E R E N O</div>
+        <div class="nav-links">
+            <a href="#product">Drop 01</a>
+            <a href="#details">Specs</a>
+            <a href="#fulfillment">Pre-Order Info</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="product">
+        <div class="hero-content">
+            <span class="tag">LIMITED RUN · GARMENT-DYED</span>
+            <h1>The Heavyweight Quarter-Zip</h1>
+            <p class="price">$88.00 USD</p>
+            <p class="description">
+                Engineered from heavyweight cotton-face fleece. Custom branded with an exterior back-yoke signature hardware mark and interior studio labeling. Built for longevity.
+            </p>
+            
+            <!-- SIZING SELECTOR -->
+            <div class="selector-group">
+                <label>SIZE:</label>
+                <div class="size-options">
+                    <button class="size-btn active" onclick="selectSize('S')">S</button>
+                    <button class="size-btn" onclick="selectSize('M')">M</button>
+                    <button class="size-btn" onclick="selectSize('L')">L</button>
+                    <button class="size-btn" onclick="selectSize('XL')">XL</button>
+                </div>
+            </div>
+
+            <!-- STRIPE CHECKOUT BUTTON -->
+            <a href="#" class="cta-button" id="checkout-link">SECURE PRE-ORDER ($88)</a>
+            
+            <p class="micro-note">Estimated fulfillment & delivery: 14–21 days post-drop close.</p>
+        </div>
+        
+        <div class="hero-image">
+            <!-- Insert your product mockup here -->
+            <div class="image-placeholder">TERENO DROP 01 MOCKUP</div>
+        </div>
+    </section>
+
+    <!-- DETAILS SECTION -->
+    <section class="details" id="details">
+        <h2>Garment Architecture</h2>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3>01 / The Blank</h3>
+                <p>Independent Trading Co. heavy-blend fleece. Premium hand-feel, structured collar, and metal hardware zipper.</p>
+            </div>
+            <div class="spec-card">
+                <h3>02 / The Branding</h3>
+                <p>Matte tonal back-yoke `T` hardware mark on the spine. Custom tagless interior neck transfer in Cormorant Garamond.</p>
+            </div>
+            <div class="spec-card">
+                <h3>03 / The Fit</h3>
+                <p>Relaxed, contemporary boxy studio fit. True-to-size tailoring with reinforced ribbing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 TERENO STUDIO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        function selectSize(size) {
+            document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            // Logic to update Stripe metadata link if needed can go here
+        }
+    </script>
+</body>
+</html>
