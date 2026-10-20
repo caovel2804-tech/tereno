@@ -1,0 +1,219 @@
+:root {
+    --bg-color: #0c0c0c;
+    --surface-color: #141414;
+    --text-primary: #f4f4f0;
+    --text-secondary: #888888;
+    --accent-color: #d4d4d0;
+    --border-color: #262626;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+}
+
+.announcement-bar {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding: 8px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 32px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+    padding: 64px 48px;
+    gap: 64px;
+    align-items: center;
+}
+
+.hero-content .tag {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 16px;
+}
+
+.hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.price {
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-bottom: 24px;
+}
+
+.description {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+.selector-group {
+    margin-bottom: 32px;
+}
+
+.selector-group label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.size-options {
+    display: flex;
+    gap: 12px;
+}
+
+.size-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 48px;
+    height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.size-btn.active, .size-btn:hover {
+    border-color: var(--text-primary);
+    background: var(--text-primary);
+    color: var(--bg-color);
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 18px 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    transition: opacity 0.2s;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.micro-note {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.hero-image {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.2em;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.details {
+    padding: 96px 48px;
+    border-top: 1px solid var(--border-color);
+}
+
+.details h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.spec-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 32px;
+}
+
+.spec-card h3 {
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: var(--accent-color);
+}
+
+.spec-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+footer {
+    padding: 32px 48px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--text-secondary);
+}
